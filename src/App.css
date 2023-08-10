@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+* {
+    box-sizing: border-box;
+    font-family: "baloo_paaji_2regular";
+    list-style: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+    font-family: "baloo_paaji_2regular";
+    src: url("assets/fonts/baloopaaji2-regular-webfont.woff2")
+            format("woff2"),
+        url("assets/fonts/baloopaaji2-regular-webfont.woff")
+            format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+.box {
+    min-height: 100vh;
+    height: auto;
+    max-width: 980px;
+    border: 2px solid #f5f5f5;
+    margin: 0 auto;
+    padding: 64px 150px;
+    width: 80%;
+}
+.box h1 {
+    text-align: center;
+    font-size: 44px;
+    margin-bottom: 44px;
+}
+.box h3 {
+    font-size: 32px;
+    color: #040241;
+}
+.box ul {
+    width: 100%;
+}
+.box ul li {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    margin-top: 26px;
+    position: relative;
+}
+.box ul li .circle {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+.box ul li p {
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 500;
+    
+}
+.box ul li .delete-icon {
+    display: inline-block;
+    width: 25px !important;
+    height: 23px !important;
+    margin-left: auto;
+    
+}
+.box form {
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.box form input[type="text"] {
+    background-image: url("assets/plus.svg");
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    width: 78%;
+    height: 60px;
+    outline: none;
+    border: 1px solid #c6c6c6;
+    font-size: 20px;
+    padding-left: 38px;
+}
+.box form button {
+    width: 22%;
+    height: 60px;
+    background-color: #040241;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 0px 6px 6px 0;
+    font-size: 21px;
+}
+.box ul li .revert-icon {
+    position: absolute;
+    right: 46px;
+}
+.box ul li .tick-icon {
+    position: absolute;
+    left: 4px;
+}
+.box ul li.green {
+    color: #3FD3AB;
+}
+.box ul li.green .circle {
+    border-color: #3FD3AB;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
